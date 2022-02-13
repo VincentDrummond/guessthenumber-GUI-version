@@ -1,0 +1,124 @@
+/* Be creative. Make this look nice-ish. */
+
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    box-sizing: border-box;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 10px;
+}
+
+:root {
+    --wf-steel:#bebebe;
+    --wf-purple:#412d4d;
+    --wf-lightpurple:#d9bfe6;
+    --wf-green:#00c9b2;
+    --wf-cream:#fffade;
+}
+
+::placeholder {
+    color: var(--wf-steel);
+    opacity: 1;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--wf-cream);
+    color: var(--wf-purple);
+    font-size: 2rem;
+    height: 20vh;
+    border-bottom: 20px solid var(--wf-green);
+}
+
+footer {
+    height: 10vh;
+    background-color: var(--wf-cream);
+    border-top: 12px solid var(--wf-green);
+}
+
+h2 {
+    font-size: 1.7rem;
+}
+
+h3 {
+    margin-top: 2rem;
+    font-size: 1.3rem;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--wf-purple);
+    color: var(--wf-cream);
+    height: 70vh;
+}
+
+.text-elements {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+p {
+    font-size: 3rem;
+    margin-top: 5px;
+}
+
+label {
+    margin-top: 30px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input,
+button {
+    border: 20px solid var(--wf-green); 
+    background-color: var(--wf-cream);
+    border-radius: 150px;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: var(--wf-purple);
+    transition: background-color 1s;
+    /* box-shadow: var(--wf-green) 0px 0px 30px 2px; */
+}
+
+button {
+    font-size: 5rem;
+    color: var(--wf-steel);
+    margin: 40px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-top:-40px;
+}
+
+button:hover {
+    background-color: var(--wf-green);
+    color: var(--wf-cream);
+    cursor: pointer;
+}
+
+input {
+    font-size: 10rem;
+}
+
+
+
