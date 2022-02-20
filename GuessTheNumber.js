@@ -1,4 +1,4 @@
-import {randomInteger} from "./random.js";
+import { randomInteger } from "./random.js";
 
 /*
 
@@ -33,6 +33,7 @@ export default class GuessTheNumber {
 	static EXACT_MATCH = Symbol('exact match');
 	static OUT_OF_BOUNDS = Symbol('out of bounds');
 	static GAME_OVER = Symbol('game over');
+	// static REPEATED_NUMBER = Symbol('repeated number');
 
 
 	/*
@@ -123,6 +124,9 @@ export default class GuessTheNumber {
 		
 		if (num > this.target)
 			return GuessTheNumber.TOO_HIGH;
+
+		// if (num === XXX)
+		// 	return GuessTheNumber.REPEATED_NUMBER;
 	}
 
 

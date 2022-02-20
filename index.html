@@ -5,30 +5,39 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	
-	<link rel="stylesheet" type="text/css" href="styles.css" />
+	<link	rel="stylesheet"
+			type="text/css"
+			media="screen and (min-width: 601px)"
+			href="styles.css" />
+
+	<link	rel="stylesheet"
+			type="text/css" 
+			media="screen and (max-width: 600px)"
+			href="styles-mobile.css">
+
+
 	<script type="module" src="main.js"></script>
 </head>
 <body>
 	<header>
 		<h1>Guess The Number</h1>
 		<h2>A simple number guessing game you can play in your browser</h2>
-		<h3>&lpar;Not yet optimised for mobile&rpar;</h3>
 	</header>
 	<main>
 		<article>
 			<form>
 				<div class="text-elements">
 					<p>
-						Attempts: <span id="guessesLeft">XX</span>
+						Attempts: <span id="guessesLeft">X</span>
 					</p>
 
 					<p class="enter">
-						Enter a number below between <span id="lowerBound">X</span> and
+						Enter a number below that is between <span id="lowerBound">X</span> and
 						<span id="upperBound">X</span>
 					</p>
 
 					<label>
-					<input id="guessInput" placeholder=""/>
+					<input id="guessInput" autocomplete="off" placeholder="?"/>
 					</label>
 				</div>
 

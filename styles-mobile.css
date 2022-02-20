@@ -33,15 +33,17 @@ header {
     align-items: center;
     background-color: var(--wf-cream);
     color: var(--wf-purple);
-    font-size: 2rem;
-    height: 15vh;
-    border-bottom: 20px solid var(--wf-green);
+    font-size: 1.4rem;
+    height: 20vh;
+    border-bottom: 10px solid var(--wf-green);
+    padding: 0px 3rem;
+    text-align: center;
 }
 
 footer {
-    height: 10vh;
+    height: 20vh;
     background-color: var(--wf-cream);
-    border-top: 12px solid var(--wf-green);
+    border-top: 6px solid var(--wf-green);
 }
 
 h2 {
@@ -59,7 +61,7 @@ main {
     align-items: center;
     background-color: var(--wf-purple);
     color: var(--wf-cream);
-    height: 75vh;
+    height: 60vh;
 }
 
 .text-elements {
@@ -67,11 +69,13 @@ main {
     flex-direction: column;
     justify-content: center;
     text-align: center;
+    margin-bottom: 3rem;
+    margin-left: 4rem;
+    margin-right: 4rem;
 }
 
 p {
-    font-size: 3rem;
-    margin-top: 5px;
+    font-size: 2rem;
 }
 
 label {
@@ -85,20 +89,18 @@ form {
 
 input,
 button {
-    border: 20px solid var(--wf-green); 
+    border: 10px solid var(--wf-green); 
     background-color: var(--wf-cream);
-    border-radius: 150px;
-    width: 200px;
-    height: 200px;
+    border-radius: 100px;
+    width: 100px;
+    height: 100px;
     text-align: center;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: var(--wf-purple);
-    transition: background-color 1s;
-    /* box-shadow: var(--wf-green) 0px 0px 30px 2px; */
 }
 
 button {
-    font-size: 5rem;
+    font-size: 2rem;
     color: var(--wf-steel);
     margin: 40px;
     transition: 300ms all;
@@ -110,18 +112,8 @@ button {
     margin-top:-40px;
 }
 
-button:hover {
-    background-color: var(--wf-green);
-    color: var(--wf-cream);
-    cursor: pointer;
-}
-
-button:active {
-    transform: scale(0.8);
-}
-
 input {
-    font-size: 10rem;
+    font-size: 6rem;
 }
 
 
